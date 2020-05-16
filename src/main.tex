@@ -1,0 +1,67 @@
+% Preamble
+\providecommand{\main}{.}
+\documentclass[class=article, crop=false]{standalone}
+
+% Packages
+\usepackage{\main/packages}
+
+
+% Configurations
+\graphicspath{{\main/images/}{images/}}
+\cellspacetoplimit 4pt
+\cellspacebottomlimit 4pt
+
+\title{
+    \includegraphics[width=0.4\textwidth]{CUFELOGO.jpeg}~\\[1cm]
+    Electromagnetics 3 [ELCN405] Cheat Sheet
+}
+\date{SPRING, 2020}
+
+% Document
+\begin{document}
+    \clearpage
+    \maketitle
+    \thispagestyle{empty}
+    \newpage
+    \pagenumbering{Roman}
+    \setcounter{page}{1}
+    \begin{abstract}
+    Electromagnetics 3 course\cite{ELCN405} summary for all topics covered in the SPRING, 2020. \\
+    The cheat sheet includes all the you need to know, throughout the course to be assembled in one place, using
+    adequate references from the course\cite{ELCN405}.
+
+    \end{abstract}
+    \newpage
+    \tableofcontents
+    \newpage
+    \listoffigures
+    \newpage
+    \listoftables
+    \newpage
+
+
+    \thispagestyle{empty}
+    \vspace*{\fill}
+    \begin{center}
+        \textbf{
+            \uppercase{this page is left intentionally blank}
+        }
+    \end{center}
+    \vspace*{\fill}
+
+    \newpage
+    \pagenumbering{arabic}
+    \setcounter{page}{1}
+
+    \import{topics/1/}{intro}
+    \newpage
+    \import{topics/2/}{radiation_integrals}
+
+    \newpage
+    \setcounter{page}{1}
+    \pagenumbering{Alph}
+    \bibliography{\main/main}
+    \bibliographystyle{plain}
+
+
+\end{document}
